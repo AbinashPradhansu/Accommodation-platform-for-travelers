@@ -66,7 +66,7 @@ const sessionOptions ={
     },
 };
 
-
+ 
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -93,6 +93,7 @@ app.use((req, res) => {
 });
 
     app.use((err,req,res,next) =>{
+        console.log(err.stack);
     let { statusCode=500, message= "somthing is wrong"}= err;
     // res.status(statusCode).send(message);
     res.status(statusCode).render("error.ejs",{ err});
