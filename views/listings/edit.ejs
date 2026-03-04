@@ -1,12 +1,12 @@
- <!-- <% layout("/layouts/Boilerplate") -%> -->
+ 
   <% layout("/layouts/boilerplate") -%>
-  <div class="row fs-1">
-  <div class="col-5 offset-3 fs-1">
+  <div class="row ">
+  <div class="col-5 offset-3 ">
 <body>  
   <form method="POST" action="/listings/<%= listing._id %>?_method=PUT "  novalidate class="needs-validation " enctype="multipart/form-data">  
-         <div class="mb-3 fs-1">
+         <div class="mb-3">
                 <label for="title" class="form-lavel">Title</label>
-                <input type="text]" name="listing[title]" value="<%= listing.title %>" id="title" placeholder="Enter title" class="form-control fs-1" required>
+                <input type="text]" name="listing[title]" value="<%= listing.title %>" id="title" placeholder="Enter title" class="form-control" required>
                 <div class="valid-feedback">
                         look's good 
                 </div>
@@ -16,7 +16,7 @@
         </div>
         <div  class="mb-3">
                 <label for="description" class="form-lavel">Description</label>
-                <textarea name="listing[description]"  id="description" class="form-control fs-1" placeholder=" Enter Description" required> <%= listing.description %> </textarea>
+                <textarea name="listing[description]"  id="description" class="form-control" placeholder=" Enter Description" required> <%= listing.description %> </textarea>
            
                 <div class="invalid-feedback">
                          please enter  Description
@@ -28,7 +28,7 @@
 
         <div  class="mb-3">
                 <label for="img" class="form-lavel">Image</label>
-                <input type="file" name="listing[image]" value="<%=listing.image.url%>" class="form-control fs-1" placeholder="Upload Image" id="img">
+                <input type="file" name="listing[image]" value="<%=listing.image.url%>" class="form-control" placeholder="Upload Image" id="img">
             <div class="invalid-feedback">
                          please upload image
                 </div>
@@ -36,7 +36,7 @@
          <div class="row">
                 <div  class="mb-3 col-md-4">
               <label for="price" class="form-lavel">Price</label>
-              <input  name="listing[price]" value="<%= listing.price %>" id="price" class="form-control fs-1" placeholder="Enter price" required>
+              <input  name="listing[price]" value="<%= listing.price %>" id="price" class="form-control" placeholder="Enter price" required>
            <div class="invalid-feedback">
                          please enter valid price in letter
                 </div>
@@ -45,7 +45,7 @@
         
        <div class="mb-3 col-md-8">
               <label for="Country" class="form-lavel">Country</label>
-               <input type="text" name="listing[country]" value="<%= listing.country %>" id="Country" class="form-control fs-1" placeholder="Country" required>
+               <input type="text" name="listing[country]" value="<%= listing.country %>" id="Country" class="form-control" placeholder="Country" required>
               </div>
               <div class="invalid-feedback">
                          please enter country name
@@ -54,14 +54,14 @@
       
        <div class="mb-3">
               <label for="location" class="form-lavel">location</label>
-               <input type="text" name="listing[location]" value="<%= listing.location %>" id="location" class="form-control fs-1" placeholder="location" required>
+               <input type="text" name="listing[location]" value="<%= listing.location %>" id="location" class="form-control" placeholder="location" required>
        </div>
             <div class="invalid-feedback">
                          please enter location name
                 </div>
        <br>
          <br>
-         <button class="btn btn-dark add-btn fs-1">Add</button>
+         <button class="btn btn-dark add-btn">Add</button>
          </form>
 </body>
  </div>
