@@ -129,7 +129,7 @@
 }
 
 .card-img-top{
-    height: 700px;
+    height: 500px;
     object-fit: cover;
     transition: 0.3s ease;
 }
@@ -222,7 +222,7 @@
     cursor: pointer;
   }
  .filter i{
-    font-size: 3.1rem !important;
+    font-size: 1rem !important;
  } 
 .filter:hover{
    opacity: 1;
@@ -253,21 +253,7 @@
 }
 .search-input{
     border-radius: 25px !important;
-    width: 50em !important;
-    height: 7rem;
+    width: 30em !important;
+    height: 3rem;
 }
-/* h3{
-    font-size: larger !important;
-}
- .container-fluid {
-    font-size: 60px;
-    height: 10rem;
- }
- .container-fluid i{
-    font-size: 60px;
- }
-
- navbar-nav a{
-    font-size: 60px;
- } */
  
