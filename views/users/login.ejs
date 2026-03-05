@@ -1,9 +1,9 @@
- 
-  <% layout("layouts/boilerplate") -%>
+ <body>
+    <% layout("layouts/boilerplate") -%>
     <div class="row">
         <div class="col-5 offset-3">
-        <div class="col-lg-6 offset-lg-3"></div>    
-            <h1 class="col-6 offset-3">Login to Wanderlust</h1>
+            <div class="col-lg-6 offset-lg-3"></div>    
+            <h4 class="col-6 offset-3">Login to Wanderlust</h4>
             <form action="/login" method="post" class="needs-validation" novalidate>
                 <div class="mb-4">
                     <label for="username" class="form-lavel">Username</label>
@@ -13,9 +13,11 @@
                 <div class="mb-4">
                     <label for="password" class="form-lavel">Password</label>
                     <input type="password" name="password" id="password"   class="form-control" required>
-          
+                    <br>
                     <button class="btn btn-success">Login</button>
                 </div>      
             </form>
         </div>
     </div>
+ </body>
+  
