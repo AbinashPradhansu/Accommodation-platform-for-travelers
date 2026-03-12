@@ -12,7 +12,7 @@
         <img src="<%=listing.image.url%>" class="card-img-top show-img" alt="listingImage">
         <div class="card-body show-text">
             <p class="card-text"> 
-                <p><i> This listings belongs to <%=listing.owner.username%></i> </p> 
+                <p><i> This listings belongs to <b><%=listing.owner.username%></b></i> </p> 
                 <p><%=listing.description %></p> 
                 <p> &#8377; <%=listing.price.toLocaleString("en-IN")%></p> 
                 <p><%=listing.location %> </p> 
